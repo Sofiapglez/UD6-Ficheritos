@@ -3,14 +3,14 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Texto {
+public class ActividadUno {
 
     public static void main(String[] args) {
         File fichero = new File("Actividad1.txt");
         Scanner scanner = new Scanner(System.in);
         String texto = solicitarTexto();
         String textoFormateado = formatearTexto(texto);
-        guardarTextoEnFichero(textoFormateado, fichero);
+        guardarTexto(textoFormateado, fichero);
 
 
     }
@@ -36,13 +36,13 @@ public class Texto {
         return textoFormateado;
     }
 
-    public static void guardarTextoEnFichero(String texto, File fichero) {
+    public static void guardarTexto(String texto, File fichero) {
         try {
             FileWriter writer = new FileWriter(fichero);
             writer.write(texto);
             writer.close();
         } catch (IOException ex) {
-            System.out.println("Error al guardar el texto en el fichero.");
+            System.out.println("Error.");
             ex.printStackTrace();
         }
     }
