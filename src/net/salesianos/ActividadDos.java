@@ -9,6 +9,7 @@ public class ActividadDos {
 
     public static void main(String[] args) {
         File fichero = new File("Actividad2.txt");
+
         escribirTexto("Hola, pibe.", fichero);
         mostrarCaracteres(fichero);
     }
@@ -18,9 +19,9 @@ public class ActividadDos {
             FileWriter escritor = new FileWriter(fichero);
             escritor.write(texto);
             escritor.close();
-        } catch (IOException e) {
+        } catch (IOException ex) {
             System.out.println("Error.");
-            e.printStackTrace();
+            ex.printStackTrace();
         }
     }
 

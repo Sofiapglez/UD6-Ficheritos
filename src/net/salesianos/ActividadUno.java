@@ -10,6 +10,7 @@ public class ActividadUno {
     public static void main(String[] args) {
         File fichero = new File("Actividad1.txt");
         Scanner scanner = new Scanner(System.in);
+
         String texto = solicitarTexto();
         String textoFormateado = formatearTexto(texto);
         guardarTexto(textoFormateado, fichero);
