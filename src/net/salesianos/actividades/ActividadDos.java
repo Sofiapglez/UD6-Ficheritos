@@ -1,4 +1,4 @@
-package net.salesianos;
+package net.salesianos.actividades;
 
 import java.io.File;
 import java.io.FileWriter;
